@@ -1,0 +1,56 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden; /* Crucial: Prevent global page scrolling */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f9fc; /* A light background for the whole page */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Ensure App is a column to stack header/main */
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Add Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh; /* Keep App-header fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Main content area */
+main {
+  flex: 1; /* Allow main to take remaining vertical space */
+  margin-left: 0;
+  padding: 20%;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Removed responsive rules for sidebar */ 
